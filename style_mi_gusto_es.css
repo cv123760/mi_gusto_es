@@ -1,0 +1,167 @@
+body{    
+    background-image:url(images/IMG-20201129-WA0003.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: Cover;
+    color: white;
+    margin:0
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1024px;
+    background-color: rgba(0, 0, 0, 0.322);
+    min-height: 600px;
+    padding-bottom: 40px;
+    
+}
+
+header{ 
+    min-height: 30px;
+    background-color: rgba(0, 0, 0, 0.568);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0px 30px;
+}
+
+.logo{
+    padding: 10px 10px;
+}
+
+.logo:hover{
+    background-color: darkgreen;
+
+}
+
+nav {
+    padding: 20px, 0px;
+}
+.nav_button{
+    font-size: 1.5rem;
+    margin-left: 30px;
+    padding: 12px 12px;
+    border: 1px solid white;
+    display: inline-block;
+}
+
+.nav_button:hover{
+background-color: darkgreen;
+}
+
+.nav_button a{
+    color: white;
+    text-decoration: none;
+}
+
+/* container  */
+.name{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+}
+
+/* Contains menu Items */
+.menu_container{ 
+    margin: 0px 50px
+    /* background-color: rgba(0, 0, 0, 0.301); */
+}
+
+h2{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.menu_item{
+    width: 27%;
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.menu p:hover{
+    color: rgb(200, 255, 200);
+}
+
+.food_description{
+    display: none;
+    max-width: 200px;
+    padding: 20px;
+    background-color: rgba(41, 104, 24, 0.856);
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.609); */
+}
+
+.taco{
+    max-width: 200px;
+}
+
+
+.menu_item:hover .food_description{
+    display: block;
+
+}
+
+
+.map{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe{
+    width: 100%;
+}
+
+/* horarios page */ 
+
+.hours{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: :space-evenly;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+.box{
+    width: 25%;
+    border-bottom: 1px dashed white;
+    padding: 0 12%;
+    text-align: center;
+}
+
+
+/* Tablet View */ @media(max-width: 700px){
+    .menu_item{
+        width: 40%;
+    }
+    body{
+        background-size: auto;
+    }
+}
+
+
+/* Mobile View */ @media(max-width: 400px){
+    .menu_item{
+        width: 100%;
+    }
+
+
+
+}
